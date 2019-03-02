@@ -22,7 +22,7 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\JwlMediaWin
 OutputDir="Installer\Output"
-OutputBaseFilename=JwlMediaWinSetup
+OutputBaseFilename=JwlMediaWinItaSetup
 SetupIconFile=JwlMediaWin\icon.ico
 SourceDir={#MySource}
 Compression=lzma
@@ -33,6 +33,9 @@ SetupLogging=True
 RestartApplications=False
 CloseApplications=yes
 DisableProgramGroupPage=yes
+
+[Languages]
+Name: "italian"; MessagesFile: "compiler:Languages\Italian.isl"
 
 [Files]
 Source: "JwlMediaWin\bin\Release\CommonServiceLocator.dll"; DestDir: "{app}"; Flags: ignoreversion

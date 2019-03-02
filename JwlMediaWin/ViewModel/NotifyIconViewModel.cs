@@ -118,7 +118,7 @@ namespace JwlMediaWin.ViewModel
 
         private void ShowHelpPage()
         {
-            Process.Start(@"https://github.com/AntonyCorbett/JwlMediaWin/wiki");
+            Process.Start(@"https://github.com/TizianoNoto/JwlMediaWin/wiki");
         }
 
         private void ResetFixer()
@@ -143,7 +143,7 @@ namespace JwlMediaWin.ViewModel
             if (_isFixed && ShouldShowRestart())
             {
                 _restartTipLastShow = DateTime.UtcNow;
-                ShowBalloonMsg(BalloonIcon.Warning, "Restart JW Library for changes to take effect.");
+                ShowBalloonMsg(BalloonIcon.Warning, "Riavviare JW Library per rendere effettive le modifiche.");
             }
         }
 

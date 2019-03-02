@@ -12,7 +12,7 @@
     /// </summary>
     internal static class VersionDetection
     {
-        public static string LatestReleaseUrl => "https://github.com/AntonyCorbett/JwlMediaWin/releases/latest";
+        public static string LatestReleaseUrl => "https://github.com/TizianoNoto/JwlMediaWin/releases/latest";
 
         public static string GetLatestReleaseVersionString()
         {

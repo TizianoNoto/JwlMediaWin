@@ -12,35 +12,35 @@
 
             if (results.ErrorIsTransitioning)
             {
-                result = $"{appName} is transitioning.";
+                result = $"{appName} in transizione.";
             }
             else if (results.ErrorUnknown)
             {
-                result = "Unknown error.";
+                result = "Errore sconosciuto.";
             }
             else if (!results.FindWindowResult.JwlRunning)
             {
-                result = $"{appName} is not running.";
+                result = $"{appName} non è in esecuzione.";
             }
             else if (!results.FindWindowResult.FoundMediaWindow)
             {
-                result = $"Could not find {appName} media window.";
+                result = $"Impossibile trovare finestra multimediale di {appName}.";
             }
             else if (results.FindWindowResult.IsAlreadyFixed)
             {
-                result = $"Found {appName} media window. Already fixed.";
+                result = $"Trovata finestra multimediale di {appName}. Già corretta.";
             }
             else if (results.IsFixed)
             {
-                result = $"Found {appName} media window and fixed it.";
+                result = $"Trovata e corretta finestra multimediale di {appName}.";
             }
             else if (!results.CoreWindowFocused)
             {
-                result = "Could not fix - core window not focused.";
+                result = "Impossibile correggere – finestra principale non focalizzata.";
             }
             else
             {
-                result = "Could not fix - core window focused.";
+                result = "Impossibile correggere – finestra principale focalizzata.";
             }
 
             if (result.Equals(_previousMessage))
